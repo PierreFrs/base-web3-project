@@ -28,15 +28,15 @@ module.exports = {
             chainId: 31337,
         },
         goerli: {
-          url: GOERLI_RPC_URL,
-          accounts: [GOERLI_PRIVATE_KEY]
-        }
+            url: GOERLI_RPC_URL,
+            accounts: [GOERLI_PRIVATE_KEY],
+        },
     },
     etherscan: {
         // npx hardhat verify --network <NETWORK> <CONTRACT_ADDRESS> <CONSTRUCTOR_PARAMETERS>
         apiKey: {
-            rinkeby: ETHERSCAN_API_KEY,
-            kovan: ETHERSCAN_API_KEY,
+            goerli: ETHERSCAN_API_KEY,
+            sepolia: ETHERSCAN_API_KEY,
         },
     },
     gasReporter: {
